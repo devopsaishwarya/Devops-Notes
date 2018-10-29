@@ -123,8 +123,14 @@ Jenkins
 .....................................................................................................................................
 .....................................................................................................................................
 Q8 - What is jenkins?
-
-
+A8 - It is a CI/CD tool or a server which is written in java language.
+     It provides CI services for software development which can be started via command line or web application. It is free software to        download.
+     
+Q9 - List the features of jenkins
+A9 - Easy installation
+     Easy configuration
+     Extensible
+     Durability
 
 
 
