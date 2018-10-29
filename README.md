@@ -15,6 +15,7 @@ A2 - It is a distributed version control system and a source code management sys
 .......................................................................................................................................
 Q3 - Difference between GIT and SVN?
 A3 - Git is less preferred for handling extremely large files or frequently changing binary files while SVN can handle multiple projects stored in same repository. Git does not support multiple branch commits while SVN Supports multiple branches.
+Git is a distributed repository whereas SVN is a centralized repository.SVN is accessible to that Specific Organization whereas Git is accessible to public. 
 ........................................................................................................................................
 Q4 - GIT Advantages
 A4 - 1) Any project can use GIT without any restrictions.
@@ -23,4 +24,108 @@ A4 - 1) Any project can use GIT without any restrictions.
      4)High availability, Data redundancy and replications.
 .........................................................................................................................................
 Q5 - List GIT commands
-A5 - 
+A5 - git config --global user.name "username"
+     git config --global user.email "email@example.com"
+     git config --list
+     git clone
+     git --help
+     git --version
+     git add filename
+     git add .
+     git commit -m "any message"
+     git commit -a -m "anymessage"
+     git push
+     git pull
+     git log
+     git status
+     git init
+     git remote add anyname url_of_empty_repository
+     git push origin master
+     git branch branchname
+     git checkout branchname
+     git merge branchname1 branchname2 (master stl)master
+     git rebase branchname1 branchname2
+     git branch -m old_branch_name new_branch_name // branch rename
+     git branch -d branchname1 //delete the merged branch
+     git branch -d -r origin/branch_name origin/branch_name origin // to delete the remote branch
+     git push origin --delete branchname  // delete the mranch from remote
+     git diff
+     git revert
+     git reset
+     git resetgit push origin master --force
+     git log --graph --oneline --decorate
+     git --help
+     git --help command
+     git blame filename
+     git clean -df
+     git -n clean
+     git -dn clean
+     git ls-files --stage
+     git ls-files --cached
+     git ls-files --modified
+     git ls-files --others
+     git ls-files --deleted
+     git ls-files --unmergerd
+     git ls-files --killed
+     git format-patch COMMIT_ID
+     git fetch origin
+     touch index.css
+  ..................................................................................................................................
+ Q6 -  List ANT COMMANDS
+
+    ant clean
+    ant
+    ant compile
+------------------------------------------------------------------------------------------------------------------------
+ Q7 -  List MAVEN COMMANDS
+
+    mvn archetype:create
+   -DgroupId=org.yourcompany.project
+   --DartifactId=application
+    mvn archetype:create
+   -DgroupId=org.yourcompany.project
+   --DartifactId=application
+    -DarchetypeArtifactId=maven-archetype-webapp
+
+   mvn clean
+
+   mvn validate
+
+   mvn compile
+
+   mvn verify
+
+   mvn install
+
+   mvn clean install
+
+   mvn test
+
+   mvn deploy
+
+   mvn package
+
+   mvn deploy:deploy-file -Dfile=/path/to/jar/file -DrepositoryId=repos-server -Durl=http://repos.company.org/test -DgroupId=javax
+  -DartifactId=mail -Dpackaging=jar
+  -Dversion=1.0.1
+
+
+..................................................................................................................................
+  GRADLE COMMANDS
+
+  gradle clean
+  gradle assemble
+  gradle build
+
+....................................................................................................................................
+
+Jenkins
+.....................................................................................................................................
+.....................................................................................................................................
+Q8 - What is jenkins?
+
+
+
+
+
+
