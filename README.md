@@ -128,9 +128,58 @@ A8 - It is a CI/CD tool or a server which is written in java language.
      
 Q9 - List the features of jenkins
 A9 - Easy installation
+     continuous integration and delivery
      Easy configuration
      Extensible
-     Durability
+     Distributed ( helps in project deployment)
+ ...................................................................................................................................
+ Q10 - List of CI Tools 
+ A10 - Team city, Travis CI, Bamboo, Gitlab CI, Codeship
+       Maven, Ant, Gradle are build technologies
+       Jenkins is a continuous integration tool.
+  ..................................................................................................................................
+  Q11 - The SCM's which jenkins support are
+  A11 - Git, CVS, SVN, Mercurial, perforce, clearcase, RTC, AccuRev
+  ..................................................................................................................................
+  Q12 - Difference between CI tool and Jenkins
+  A12 - Jenkins is a free and open source
+        It has 1000 + plugins to integrate with a software tool.
+        Installation is easy and it uses Java/.net
+  ..................................................................................................................................
+  Q13 - An example of jenkins pipeline staging
+  A13 - 
+        pipeline{
+                  agent any
+        Stages{
+               stage('compiling stage') {
+               steps {
+                    with maven(maven:'maven_3.3.3')
+                    sh 'mvn clean compile'
+                    }
+                }
+             }
+               stage ('Testing stage') {
+              steps {
+                      with maven(maven:'maven_3.3.3')
+                    sh 'mvn test'
+                    }
+                 }
+             }
+                 stage ('Deploying stage') {
+              steps {
+                      with maven(maven:'maven_3.3.3')
+                    sh 'mvn deploy'
+                    }
+                 }
+             }
+             
+.....................................................................................................................................
+.....................................................................................................................................
+
+DOCKER
+....................................................................................................................................
+.....................................................................................................................................
+                    
 
 
 
